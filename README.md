@@ -1,4 +1,4 @@
-# VR Helper for Google Gear VR
+# VR Helper for Samsung Gear VR
 
 >You don't have to buy a brewery to drink bear
 
