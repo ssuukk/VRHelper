@@ -7,7 +7,7 @@
 is...) to just serve some files.
 
 So in this repository you can find a simple self-contained, stand-alone HTTP server that has just one purpose: serving
-video streams for Google Gear VR.
+video streams for Samsung Gear VR.
 
 # What can it do?
 
