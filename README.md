@@ -16,6 +16,7 @@ video streams for Google Gear VR.
 - launch movie by taping its name in Android browser (via `milkvr://sideload` url scheme)
 
 - download *.mvrl file to your device (to be visible in Gear VR, you have to move it to proper directory yourself, though)
+by taping description under file title
 
 - guess video and audio type by hints present in video name
 
@@ -38,7 +39,7 @@ dirs = /path1/videos ; /path2/othervideos (server root directories, browsing out
 Note 1: hash comments are not actually supported
 
 Note 2: this is not a secure server, it should be run only in your own, private network. It doesn't require authentication,
-you can only limit it's browsing capabilities to directories specified by `dirs` keyword.
+you can only limit its browsing capabilities to directories specified by `dirs` keyword.
 
 ## folder.png
 
