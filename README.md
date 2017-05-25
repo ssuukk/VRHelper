@@ -1,8 +1,8 @@
-#VR Helper for Google Gear VR
+# VR Helper for Google Gear VR
 
 >You don't have to buy a brewery to drink bear
 
-- my father used to say, and although he didn't mean serving video streams, but something completely different
+...my father used to say, and although he didn't mean serving video streams, but something completely different
 (if you know what I mean...), I do believe that you shouldn't be required to install Apache, MySQL and PHP (whatever it
 is...) to just serve some files.
 
@@ -43,7 +43,13 @@ you can only limit it's browsing capabilities to directories specified by `dirs`
 ## optional files
 
 `folder.png` - an icon for folder
+
 `video.png` - default video icon
+
 `mainstyles.css` - if present will override internal css
 
+# Running the server
 
+Just build it and start with
+
+`java -jar built_file.jar`
