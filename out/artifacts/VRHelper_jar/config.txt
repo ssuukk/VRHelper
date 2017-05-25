@@ -1,0 +1,3 @@
+server=PLKRKWS80003
+port=666
+dirs=C:\ ; C:\Dane ; C:\Windows
