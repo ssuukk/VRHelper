@@ -11,9 +11,9 @@ video streams for Google Gear VR.
 
 # What can it do?
 
-- quickly and easily browswe your movie collection
+- quickly and easily browse your movie collection
 
-- launch movie by taping its name in Android browser
+- launch movie by taping its name in Android browser (via `milkvr://sideload` url scheme)
 
 - download *.mvrl file to your device (to be visible in Gear VR, you have to move it to proper directory yourself, though)
 
@@ -40,11 +40,15 @@ Note 1: hash comments are not actually supported
 Note 2: this is not a secure server, it should be run only in your own, private network. It doesn't require authentication,
 you can only limit it's browsing capabilities to directories specified by `dirs` keyword.
 
-## optional files
+## folder.png
 
 `folder.png` - an icon for folder
 
+## video.png
+
 `video.png` - default video icon
+
+## mainstyles.css
 
 `mainstyles.css` - if present will override internal css
 
@@ -53,3 +57,8 @@ you can only limit it's browsing capabilities to directories specified by `dirs`
 Just build it and start with
 
 `java -jar built_file.jar`
+
+# Current limitations
+
+It seems that due to some bug (or on purpose) `milkvr://sideload` has no effect when browsed via Samsung Internet VR app.
+This sucks. Hope they will fix it soon!
