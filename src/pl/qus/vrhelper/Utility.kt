@@ -37,6 +37,8 @@ fun guessVideoType(path : String) : String {
     )
 
 
+    // vrdesktophd - dobrac projekcje
+
     val gearVrRegex = """.*gear.*vr""".toRegex()
     val containsGearVr = gearVrRegex.matchEntire(lower) != null
 
@@ -47,9 +49,11 @@ fun guessVideoType(path : String) : String {
         val tb = lower.contains("ou") || lower.contains("tb")
         val threeDee = lower.contains("3d")
 
-        if(threeDee && sbs) "_3dph"
+        if (lower.contains("oculus")) "180x180_3dh"
+        else if(lower.contains("2880x1440")) "180x180_3dh"
+        else if(lower.contains("vr")) "180x180_3dh"
+        else if(threeDee && sbs) "_3dph"
         else if(threeDee && tb) "_3dpv"
-        else if(lower.contains("vr")) "_3dph"
         else "_2dp"
     }
 }

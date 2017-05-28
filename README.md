@@ -49,6 +49,10 @@ you can only limit its browsing capabilities to directories specified by `dirs` 
 
 `video.png` - default video icon
 
+## favicon.ico
+
+`favicon.ico` - probably an icon for bookmarks, some browsers keep requesting it
+
 ## mainstyles.css
 
 `mainstyles.css` - if present will override internal css
