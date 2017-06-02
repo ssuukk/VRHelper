@@ -806,7 +806,7 @@ class VirtualMilkServer {
     //========================================================================================
 
     private fun serveIndex(): Response {
-        val msg = buildDirPage(File("/"), allowedDirs)
+        val msg = buildDirPage(File("/"), allowedDirs.filter{it.exists()}.toTypedArray())
         return Response(HTTP_OK, MIME_HTML, msg)
     }
 
@@ -1028,13 +1028,9 @@ class VirtualMilkServer {
                 serv.stopService()
             })
 
-            //System.`in`.read()
-
             do {
                 Thread.sleep(Long.MAX_VALUE)
             } while (true)
-
-            //serv.stopService()
         }
     }
 

@@ -45,12 +45,13 @@ fun guessVideoType(path : String) : String {
     return types.firstOrNull { lower.contains(it) } ?: if(containsGearVr) {
         "180x180_3dh"
     } else {
-        val sbs = lower.contains("sbs")
+        val sbs = lower.contains("sbs") || lower.contains("lr")
         val tb = lower.contains("ou") || lower.contains("tb")
-        val threeDee = lower.contains("3d")
+        val threeDee = lower.contains("3d") || lower.contains("180x180")
 
         if (lower.contains("oculus")) "180x180_3dh"
         else if(lower.contains("2880x1440")) "180x180_3dh"
+        else if(lower.contains("vrdesktophd")) "_180x180_3dh"
         else if(lower.contains("vr")) "180x180_3dh"
         else if(threeDee && sbs) "_3dph"
         else if(threeDee && tb) "_3dpv"
